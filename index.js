@@ -1,5 +1,5 @@
 let precio = 400000
-let contador = 0
+let contador = 1
 
 cantidad = document.querySelector('.cantidad')
 precioBase = document.querySelector('.precio-inicial')
@@ -16,8 +16,8 @@ btnPlus.addEventListener("click", ()=>{
 
 btnMinus.addEventListener("click", () =>{
     contador -=1
-    if (contador <= 0)
-        contador = 0
+    if (contador < 1)
+        contador = 1
 
     cantidad.innerHTML = contador
     valorTotal = contador * precio
